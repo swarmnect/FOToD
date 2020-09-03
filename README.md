@@ -22,9 +22,6 @@ elasticip.compute-1.amazonaws.com
 Example:
 “ssh -i "awskey.pem" ubuntu@ec2-eleaticip.compute-1.amazonaws.com”
 
-
-
-
 Installing AWS Mavlink Router 
 1)Set up the AWS firewall
 Open port 22 only to incoming/outgoing traffic from anywhere
@@ -36,13 +33,9 @@ Run script:
 sudo chmod 777 ~/AWSbuild.sh; 
 sudo ~/AWSbuild.sh | tee buildlog.txt
 Done!
- 
- 
+  
 We need aws ip adress i use alastic ip
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html
-
-
-
 
 
 MAVLINK ROUTER BUILD
