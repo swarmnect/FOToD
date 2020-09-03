@@ -162,7 +162,7 @@ function configuremavlinkrouter {
 
     cd /etc/mavlink-router
     # wget main.conf #  for mavlink-router configuration
-    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouterBuild/main.conf -O /etc/mavlink-router/main.conf
+    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouter/main.conf -O /etc/mavlink-router/main.conf
     sudo chmod 777 main.conf
     echo "Done configuring mavlink-router..."
 
@@ -178,8 +178,8 @@ function downloadautostartscriptsformavlinkrouter {
         echo "Made /home/pi/startupscripts" 
     fi
     cd /home/pi/startupscripts
-    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouterBuild/autostart_mavlinkrouter.sh -O /home/pi/startupscripts/autostart_mavlinkrouter.sh
-    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouterBuild/start_mavlinkrouter.sh  -O /home/pi/startupscripts/start_mavlinkrouter.sh
+    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouter/autostart_mavlinkrouter.sh -O /home/pi/startupscripts/autostart_mavlinkrouter.sh
+    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouter/start_mavlinkrouter.sh  -O /home/pi/startupscripts/start_mavlinkrouter.sh
     echo "Did download the autostart scripts for mavlink-router"
     
 }
@@ -194,12 +194,12 @@ function downloadautostartscriptsforAWSssh {
         echo "Made /home/pi/startupscripts" 
     fi
     cd /home/pi/startupscripts
-    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouterBuild/autostart_sshtoAWS.sh -O /home/pi/startupscripts/autostart_sshtoAWS.sh 
-    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouterBuild/start_sshtoAWS.sh -O /home/pi/startupscripts/start_sshtoAWS.sh 
+    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouter/autostart_sshtoAWS.sh -O /home/pi/startupscripts/autostart_sshtoAWS.sh 
+    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouter/start_sshtoAWS.sh -O /home/pi/startupscripts/start_sshtoAWS.sh 
 
 
-    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouterBuild/autostart_sshtoAWS_forterminal.sh -O /home/pi/startupscripts/autostart_sshtoAWS_forterminal.sh 
-    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouterBuild/start_sshtoAWS_forterminal.sh -O /home/pi/startupscripts/start_sshtoAWS_forterminal.sh 
+    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouter/autostart_sshtoAWS_forterminal.sh -O /home/pi/startupscripts/autostart_sshtoAWS_forterminal.sh 
+    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouter/start_sshtoAWS_forterminal.sh -O /home/pi/startupscripts/start_sshtoAWS_forterminal.sh 
 
     echo "Did download the autostart scripts for sshtoAWS"
 
@@ -239,7 +239,7 @@ function editrclocal {
 
     echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
     echo "Now downloading rc.local file from gitlab repo"
-    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouterBuild/rc.local -O /etc/rc.local
+    wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouter/rc.local -O /etc/rc.local
     echo "Did download rc.local from gitlab repo"
     sudo chown root:root /etc/rc.local
     sudo chmod 777 /etc/rc.local
