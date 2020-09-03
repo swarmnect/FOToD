@@ -62,7 +62,7 @@ Using this code “sudo raspi-config”
 5) Reboot Pi.
 “sudo reboot”
 6) Get the script to install and configure the Pi.
-wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouterBuild/MavlinkRouterBuild.sh
+wget https://github.com/swarmnect/FOToD/raw/master/MavlinkRouter/MavlinkRouterBuild.sh
 
  “sudo chmod 777 ~/MavlinkRouterBuild.sh”
 “sudo ~/MavlinkRouterBuild.sh 2>&1 | tee MavlinkRouterBuildlog.txt”
@@ -82,7 +82,7 @@ Target hardware/prerequisites
 •	Raspberry Pi 
 •	Raspberry Pi camera
 1) Get the script to install and configure the Pi:
-“wget https://github.com/swarmnect/FOToD/raw/master/webcam/installwebcam.sh”
+“wget https://github.com/swarmnect/FOToD/raw/master/WebCam/installwebcam.sh”
 
 2)Run script to set up the files so webcam starts at boot and AWS ssh tunnel configuration:
 sudo chmod 777 ~/installwebcam.sh; 

@@ -68,8 +68,8 @@ then
     echo "Made /home/pi/startupscripts" 
 fi
 cd /home/pi/startupscripts
-wget https://github.com/swarmnect/FOToD/raw/master/webcam/autostart_sshtoAWSforWebCam.sh -O /home/pi/startupscripts/autostart_sshtoAWSforWebCam.sh 
-wget https://github.com/swarmnect/FOToD/raw/master/webcam/start_sshtoAWSforWebCam.sh -O /home/pi/startupscripts/start_sshtoAWSforWebCam.sh 
+wget https://github.com/swarmnect/FOToD/raw/master/WebCam/autostart_sshtoAWSforWebCam.sh -O /home/pi/startupscripts/autostart_sshtoAWSforWebCam.sh 
+wget https://github.com/swarmnect/FOToD/raw/master/WebCam/start_sshtoAWSforWebCam.sh -O /home/pi/startupscripts/start_sshtoAWSforWebCam.sh 
 echo "Did download the autostart scripts for sshtoAWS"
 
 sudo chmod 777 *.sh
